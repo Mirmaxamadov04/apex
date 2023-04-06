@@ -1,0 +1,95 @@
+@import "button";
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__image {
+  margin-top: 20px;
+  // padding-top: 10px;
+  width: 95px;
+  height: 35px;
+  object-fit: cover;
+}
+
+.nav {
+  max-width: 450px;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.nav__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item > a {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1b1c20;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}
+
+.nav__item > a:hover,
+.nav__div__paragraph:hover {
+  color: #fb8e0b;
+}
+
+.nav__div {
+  padding-top: 10px;
+  max-width: 250px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__div__paragraph {
+  display: block;
+  padding-top: 6px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 30px;
+  color: #1b1c20;
+  cursor: pointer;
+}
+
+// .nav__div__button {
+//   padding: 13px 20px;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 24px;
+//   text-align: right;
+//   color: #ffffff;
+//   background: #fb8e0b;
+//   border-radius: 8px;
+//   border: none;
+//   transition: 0.3s all ease;
+//   cursor: pointer;
+// }
+
+.nav__div__button:hover {
+  background-color: #ffffff;
+  color: #fb8e0b;
+  border: 1px solid #fb8e0b;
+}
+
+@media only screen and (max-width: 900px) {
+  .nav {
+    display: none;
+  }
+
+  .nav__div__button {
+    margin-left: auto;
+    margin-right: 10px;
+  }
+
+  .nav__div__paragraph {
+    display: none;
+    visibility: hidden;
+  }
+}

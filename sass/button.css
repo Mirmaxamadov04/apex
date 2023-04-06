@@ -1,0 +1,13 @@
+.button {
+  padding: 13px 20px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #ffffff;
+  background: #fb8e0b;
+  border-radius: 8px;
+  border: none;
+  transition: 0.3s all ease;
+  cursor: pointer;
+}/*# sourceMappingURL=button.css.map */

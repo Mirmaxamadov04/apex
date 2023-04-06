@@ -1,0 +1,141 @@
+.chat .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat__info {
+  padding-top: 90px;
+}
+
+.chat__info__heading {
+  padding-top: 20px;
+  max-width: 518px;
+  width: 100%;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 56px;
+  color: #1b1c20;
+}
+
+.chat__info__paragraph {
+  padding-top: 24px;
+  max-width: 510px;
+  width: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #383a47;
+}
+
+.chat__info__button {
+  margin-top: 40px;
+}
+
+.chat__info__button:hover {
+  background-color: #ffffff;
+  color: #fb8e0b;
+  border: 1px solid #fb8e0b;
+}
+
+.chat__card {
+  box-shadow: none;
+  position: relative;
+  max-width: 500px;
+  width: 100%;
+}
+
+.chat__card > img {
+  position: absolute;
+}
+
+.left-card {
+  bottom: -200px;
+  right: 330px;
+}
+
+.right-card {
+  right: -70px;
+  top: 170px;
+}
+
+@media only screen and (max-width: 900px) {
+  .chat .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chat__info {
+    padding-top: 30px;
+  }
+
+  .chat__card {
+    margin-top: 15px;
+  }
+
+  .left-card {
+    bottom: -600px;
+    right: 230px;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .chat .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .chat__info {
+    padding-top: 30px;
+  }
+
+  .chat__card {
+    width: 350px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .main-card {
+    width: 305px;
+    height: 435px;
+    margin-left: -120px;
+    object-fit: cover;
+  }
+
+  .left-card {
+    width: 240px;
+    height: 140px;
+    bottom: -300px;
+    right: 200px;
+  }
+
+  .right-card {
+    width: 160px;
+    height: 200px;
+    right: -40px;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .right-card {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .chat .container {
+    text-align: left;
+  }
+
+  .left-card {
+    display: none;
+  }
+
+  .right-card {
+    display: none;
+  }
+}
